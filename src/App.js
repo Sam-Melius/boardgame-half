@@ -50,7 +50,7 @@ export default function App() {
                 <Link to='/create'>Create Page</Link>
               </li>
               <li>
-                <button onClick={logout}>Logout</button>
+                <a onClick={handleLogout} >Logout</a>
               </li>
             </ul>
           }
