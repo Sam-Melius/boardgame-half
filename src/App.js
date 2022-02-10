@@ -3,7 +3,6 @@ import { getUser } from './services/fetch-utils';
 import {
   BrowserRouter as Router,
   Switch,
-  NavLink,
   Route,
   Redirect,
   Link
@@ -18,7 +17,7 @@ import { logout } from './services/fetch-utils';
 
 export default function App() {
   // You'll need to track the user in state
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState(localStorage.getItem('supabase.auth.token'));
 
   // add a useEffect to get the user and inject the user object into state on load
   useEffect(() => {
@@ -33,12 +32,12 @@ export default function App() {
     // call the logout function
     await logout();
     // clear the user in state
-    setCurrentUser(null);
+    setCurrentUser();
   }
 
   return (
     <Router>
-      <div className='App'>
+      <div className='App'>Sam Inc.
         <header>
           {
             currentUser &&

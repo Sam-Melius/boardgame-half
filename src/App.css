@@ -18,14 +18,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .App header a {
   margin: 10px;
   background-color: white;
   border-radius: 20px;
-  padding: 15px;
+  padding: 2px;
   cursor: pointer;
+  
 }
 
 .App header a:hover {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useEffect } from 'react/cjs/react.development';
+
 import { signIn, signUp } from './services/fetch-utils.js';
 
 export default function AuthPage({ setCurrentUser }) {
