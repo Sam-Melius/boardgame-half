@@ -27,8 +27,8 @@ export default function CreatePage() {
       genre,
       designer,
       description,
-      minPlayers,
-      maxPlayers
+      min_players: minPlayers,
+      max_players: maxPlayers
     });
     // create a game
     history.push('/board-games');
